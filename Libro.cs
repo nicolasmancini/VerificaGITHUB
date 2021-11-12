@@ -7,8 +7,8 @@ using System.Threading.Tasks;
 namespace VerificaGITHUB
 {
     class Libro
-    {//l’autore, il titolo, l’anno di pubblicazione, l’editore e il numero di pagine.
-
+    { 
+        //Classe Libro con attributi e metodi utili
         private string _autore;
         private string _titolo;
         private string _editore;
