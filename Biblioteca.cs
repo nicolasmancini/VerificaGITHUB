@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace VerificaGITHUB
 {
     class Biblioteca
-    {//nome, l’indirizzo e gli orari di apertura e chiusura giornaliera, che contenga l’elenco dei libri 
+    {
         private string _nome;
         private string _indirizzo;
         private DateTime _orarioApertura;
