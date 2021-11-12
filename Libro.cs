@@ -15,12 +15,18 @@ namespace VerificaGITHUB
         private DateTime _anno;
         private int _nPagine;
 
-        public Libro(string autore,string titolo,string editore,DateTime anno,int pagine)
+        public Libro(string autore,string titolo,string editore,DateTime anno,int pagine):this(autore,titolo,editore,pagine)
+        {
+            
+            Anno = anno;
+            
+        }
+        public Libro(string autore, string titolo, string editore, int pagine)
         {
             Autore = autore;
             Editore = editore;
-           Titolo=titolo;
-            Anno = anno;
+            Titolo = titolo;
+             
             NPagine = pagine;
         }
         public override string ToString()
