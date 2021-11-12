@@ -74,5 +74,9 @@ namespace VerificaGITHUB
             }
             return libriAutore;
         }
+        public int LibriPresenti()
+        {
+            return Libri.Count();
+        }
     }
 }
