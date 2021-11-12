@@ -7,6 +7,17 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="23,64,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Titolo" HorizontalAlignment="Left" Margin="23,33,0,0" VerticalAlignment="Top" Width="56"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="23,136,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Autore" HorizontalAlignment="Left" Margin="23,105,0,0" VerticalAlignment="Top" Width="56"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="23,220,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Editore" HorizontalAlignment="Left" Margin="23,189,0,0" VerticalAlignment="Top" Width="56"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="23,307,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Pagine" HorizontalAlignment="Left" Margin="23,265,0,0" VerticalAlignment="Top" Width="56"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="23,388,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Anno di Publicazione" HorizontalAlignment="Left" Margin="23,346,0,0" VerticalAlignment="Top" Width="120"/>
+        <Button Content="CREA LIBRO" HorizontalAlignment="Left" Margin="211,59,0,0" VerticalAlignment="Top" Width="86" Height="28"/>
+
     </Grid>
 </Window>
