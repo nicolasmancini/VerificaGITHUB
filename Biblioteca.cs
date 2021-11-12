@@ -14,12 +14,18 @@ namespace VerificaGITHUB
         private DateTime _orarioChiusura;
         private List<Libro> _libri;
 
-        public Biblioteca(string nome,string indirizzo,DateTime orarioApertura,DateTime orarioChiusura,List<Libro> libri)
+        public Biblioteca(string nome,string indirizzo,DateTime orarioApertura,DateTime orarioChiusura,List<Libro> libri):this(nome,indirizzo,libri)
         {
-            Nome = nome;
-            Indirizzo = indirizzo;
+            
             OrarioApertura = orarioApertura;
             OrarioChiusura = orarioChiusura;
+            
+
+        }
+        public Biblioteca(string nome, string indirizzo, List<Libro> libri)
+        {
+            Nome = nome;
+            Indirizzo = indirizzo;             
             Libri = libri;
 
         }

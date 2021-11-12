@@ -7,29 +7,29 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <TextBox  HorizontalAlignment="Left" Height="23" Margin="23,64,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtTitolo" HorizontalAlignment="Left" Height="23" Margin="23,64,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <Label Content="Titolo" HorizontalAlignment="Left" Margin="23,33,0,0" VerticalAlignment="Top" Width="56"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="180,72,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtAutore" HorizontalAlignment="Left" Height="23" Margin="180,72,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <Label Content="Autore" HorizontalAlignment="Left" Margin="180,41,0,0" VerticalAlignment="Top" Width="56"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="23,154,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtEditore" HorizontalAlignment="Left" Height="23" Margin="23,154,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <Label Content="Editore" HorizontalAlignment="Left" Margin="23,123,0,0" VerticalAlignment="Top" Width="56"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="180,165,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtPagine" HorizontalAlignment="Left" Height="23" Margin="180,165,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <Label Content="Pagine" HorizontalAlignment="Left" Margin="180,123,0,0" VerticalAlignment="Top" Width="56"/>
         <TextBox HorizontalAlignment="Left" Height="23" Margin="23,253,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <Label Content="Anno di Publicazione" HorizontalAlignment="Left" Margin="23,211,0,0" VerticalAlignment="Top" Width="120"/>
-        <Button Content="CREA ED AGGIUNGI LIBRO" HorizontalAlignment="Left" Margin="23,297,0,0" VerticalAlignment="Top" Width="174" Height="72"/>
-        <ListBox HorizontalAlignment="Left" Height="204" Margin="311,33,0,0" VerticalAlignment="Top" Width="203"/>
+        <Button Content="CREA ED AGGIUNGI LIBRO" HorizontalAlignment="Left" Margin="23,297,0,0" VerticalAlignment="Top" Width="174" Height="72" Click="Button_Click"/>
+        <ListBox x:Name="lsbBiblioteca" HorizontalAlignment="Left" Height="204" Margin="311,33,0,0" VerticalAlignment="Top" Width="203"/>
         <Label Content="BIBLIOTECA" HorizontalAlignment="Left" Margin="311,2,0,0" VerticalAlignment="Top"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="316,278,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="TextBox_TextChanged"/>
+        <TextBox x:Name="txtCercaTitolo" HorizontalAlignment="Left" Height="23" Margin="316,278,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" />
         <Label Content="Ricerca Libro(Inserire il titolo)" HorizontalAlignment="Left" Margin="316,247,0,0" VerticalAlignment="Top"/>
-        <Button Content="CERCA LIBRO" HorizontalAlignment="Left" Margin="476,278,0,0" VerticalAlignment="Top" Width="88"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="316,347,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="TextBox_TextChanged"/>
+        <Button Content="CERCA LIBRO" HorizontalAlignment="Left" Margin="476,278,0,0" VerticalAlignment="Top" Width="88" Click="Button_Click_2"/>
+        <TextBox x:Name="txtCercaAutore" HorizontalAlignment="Left" Height="23" Margin="316,347,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" />
         <Label Content="Ricerca Libri(Inserire il nome di un autore)" HorizontalAlignment="Left" Margin="316,316,0,0" VerticalAlignment="Top"/>
-        <Button Content="CERCA LIBRI" HorizontalAlignment="Left" Margin="476,347,0,0" VerticalAlignment="Top" Width="88"/>
-        <Button Content="VISUALIZZA NUMERO DI LIBRI PRESENTI" HorizontalAlignment="Left" Margin="532,33,0,0" VerticalAlignment="Top" Width="236" Height="37"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="532,88,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="TextBox_TextChanged"/>
-        <Button Content="VISUALIZZA READING TIME" HorizontalAlignment="Left" Margin="532,130,0,0" VerticalAlignment="Top" Width="173" Height="38"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="532,183,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Button Content="CERCA LIBRI" HorizontalAlignment="Left" Margin="476,347,0,0" VerticalAlignment="Top" Width="88" Click="Button_Click_3"/>
+        <Button Content="VISUALIZZA NUMERO DI LIBRI PRESENTI" HorizontalAlignment="Left" Margin="532,33,0,0" VerticalAlignment="Top" Width="236" Height="37" Click="Button_Click_1"/>
+        <TextBox x:Name="txtLibriPresenti" HorizontalAlignment="Left" Height="23" Margin="532,88,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" />
+        <Button Content="VISUALIZZA READING TIME" HorizontalAlignment="Left" Margin="544,165,0,0" VerticalAlignment="Top" Width="173" Height="38" Click="Button_Click_4"/>
+        <TextBox x:Name="txtReadingTime" HorizontalAlignment="Left" Height="23" Margin="564,208,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
 
     </Grid>
 </Window>
