@@ -43,5 +43,36 @@ namespace VerificaGITHUB
         {
             get;set;
         }
+        public void AggiungiLibro(Libro l)
+        {
+            Libri.Add(l);
+        }
+        public Libro RicercaLibro(string titolo)
+        {
+            
+            foreach(Libro l in Libri)
+            {
+                if (l.Titolo == titolo)
+                {
+                    return l;
+                    
+                }
+                
+            }
+            return null;
+            
+        }
+        public List<Libro> RicercaLibriAutore(string autore)
+        {
+            List<Libro> libriAutore=new List<Libro>();
+            foreach(Libro l in Libri)
+            {
+                if (l.Autore == autore)
+                {
+                    libriAutore.Add(l);
+                }
+            }
+            return libriAutore;
+        }
     }
 }
